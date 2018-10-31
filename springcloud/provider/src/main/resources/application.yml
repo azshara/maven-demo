@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springcloud-provider
+  cloud:
+    zookeeper:
+      connect-string: 10.8.8.8:2181
+      discovery:
+        enabled: true
+        register: true
+        root: /spring-cloud-demo
